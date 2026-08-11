@@ -39,9 +39,9 @@ playwright/.auth/
 .eslintcache
 .stylelintcache
 *.tsbuildinfo
-tmp/
-temp/
-uploads/
+/tmp/
+/temp/
+/uploads/
 
 # generated Prisma client
 app/generated/
@@ -80,17 +80,17 @@ id_rsa
 id_ed25519
 
 # local database state and backups
-postgres-data/
-backups/
+/postgres-data/
+/backups/
 *.db
 *.db-journal
 *.dump
 *.backup
 
 # local financial imports and exports
-imports/
-exports/
-local-data/
+/imports/
+/exports/
+/local-data/
 *.csv
 *.ofx
 *.qfx
