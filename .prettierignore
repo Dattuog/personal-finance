@@ -1,0 +1,8 @@
+.next
+AI_Personal_Finance_Tracker_Codex_Build_Instructions.md
+app/generated
+coverage
+node_modules
+pnpm-lock.yaml
+playwright-report
+test-results

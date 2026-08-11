@@ -1,0 +1,15 @@
+allowBuilds:
+  "@google/genai": true
+  "@prisma/engines": true
+  esbuild: true
+  prisma: true
+  protobufjs: true
+  unrs-resolver: true
+overrides:
+  nodemailer: 9.0.5
+peerDependencyRules:
+  allowedVersions:
+    nodemailer: ">=9.0.1"
+minimumReleaseAgeExclude:
+  - "@types/pg@8.20.4"
+  - tsx@4.23.7

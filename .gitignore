@@ -1,0 +1,103 @@
+# dependencies and package-manager caches
+node_modules/
+.pnpm-store/
+.npm/
+
+# Next.js
+.next/
+out/
+
+# production output and caches
+build/
+dist/
+.cache/
+.swc/
+.turbo/
+.vercel/
+
+# local environment and secrets
+.env
+.env*
+!.env.example
+.envrc
+.direnv/
+
+# local Docker Compose overrides
+compose.override.yml
+compose.override.yaml
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# tests and tooling
+coverage/
+.nyc_output/
+playwright-report/
+blob-report/
+test-results/
+playwright/.auth/
+.playwright/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+tmp/
+temp/
+uploads/
+
+# generated Prisma client
+app/generated/
+
+# logs, crash output, and OS files
+*.log
+*.pid
+*.pid.lock
+core
+core.*
+.DS_Store
+._*
+.Spotlight-V100/
+.Trashes/
+Thumbs.db
+Desktop.ini
+
+# editors and local Codex tooling
+.vscode/
+.idea/
+.history/
+*.swp
+*.swo
+*~
+.agents/
+.codex/
+
+# private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+
+# local database state and backups
+postgres-data/
+backups/
+*.db
+*.db-journal
+*.dump
+*.backup
+
+# local financial imports and exports
+imports/
+exports/
+local-data/
+*.csv
+*.ofx
+*.qfx
+*.qif
+*.mt940
+*.xls
+*.xlsx
+
+# Explicitly allow intentionally synthetic CSV fixtures in tests.
+!tests/fixtures/**/*.csv
