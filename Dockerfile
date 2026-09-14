@@ -1,4 +1,4 @@
-FROM node:22.23.0-bookworm-slim AS base
+FROM node:26.8-bookworm-slim AS base
 ENV PNPM_HOME=/pnpm
 ENV PATH=$PNPM_HOME:$PATH
 RUN corepack enable && corepack prepare pnpm@11.20.0 --activate
@@ -25,7 +25,7 @@ RUN DATABASE_URL=postgresql://build@127.0.0.1:5432/build \
     AUTH_SECRET="$(head -c 32 /dev/urandom | base64)" \
     pnpm build
 
-FROM node:22.23.0-bookworm-slim AS runner
+FROM node:26.8-bookworm-slim AS runner
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3000
